@@ -1,0 +1,194 @@
+<html><head><title> ESP ✅ </title>
+</head><body><img src="BEsp.png" width="1520" height="400">
+👇Otras pestañas de Interes👇
+
+<br>
+<a href="index.html">Tienda</a>
+<a href="contacto.html">Contacto</a>
+<a href="Ubicacion.html">Ubicaciones</a>
+<a href="comentarios.html">Comentarios</a>
+<a href="vicion.html">Misión y Visión</a>
+<a href="historia.html">Historia</a>
+<a href="desarrollador.html">Desarrollador</a>
+<br>
+<br>
+<center><font size="150"> Modelos ESP </font></center>
+<center>
+<a href="arduino.html">
+<img src="Arduino.png" width="70" height="70"></a></td>
+<td><a href="Raspberry.html">
+<img src="Raspi.png" width="70" height="70"></a></td>
+<td><a href="plc.html">
+<img src="Plc.png" width="70" height="70"></a></td>
+</center>
+<br>
+<center>
+<a href="integrado1.html">
+<img src="Integrado1.png" width="70" height="70"></a></td>
+
+<a href="integrado2.html">
+<img src="Integrado2.png" width="70" height="70"></a></td>
+
+<a href="integrado3.html">
+<img src="Integrado3.png" width="70" height="70"></a></td>
+
+<a href="integrado4.html">
+<img src="Integrado4.png" width="70" height="70"></a></td>
+
+<a href="integrado5.html">
+<img src="Integrado5.png" width="70" height="70"></a></td>
+</center>
+<h1>---------------------------------------------------------------------------------------------------------------------------------------------</h1>
+
+<table border="3.5" bordercolor="white=" "="" width="10%" height="10%""background="">
+  <tbody><tr>
+    <td><h1> ESP32-DevKitC</h1>
+<img src="EDev.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad1">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(1, 'cantidad1')">Agregar al carrito</button></td>
+
+    <td><h1>ESP32-WROOM-32 </h1>
+<img src="EWr.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad2">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(2, 'cantidad2')">Agregar al carrito</button></td>
+
+    <td><h1>ESP32-CAM</h1>
+<img src="ECa.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad3">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(3, 'cantidad3')">Agregar al carrito</button></td>
+
+    <td><h1>ESP32-S2 DevKitC</h1>
+<img src="EDevk.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad4">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(4, 'cantidad4')">Agregar al carrito</button></td>
+	
+	<td><h1>ESP32-S3</h1>
+<img src="ES3.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad5">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(5, 'cantidad5')">Agregar al carrito</button></td>
+<table border="3.5" bordercolor="white=" "="" width="10%" height="10%""background="">
+	
+	<td><h1>ESP32-C3</h1>
+<img src="EC3.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad6">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(6, 'cantidad6')">Agregar al carrito</button></td>
+	
+	<td><h1>ESP32-C6</h1>
+<img src="EC6.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad7">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(7, 'cantidad1')">Agregar al carrito</button></td>
+	
+	<td><h1>ESP8266</h1>
+<img src="ES266.png" width="300" height="300"></a>
+<br>Cantidad<br>
+<select id="cantidad8">
+	<option>1</option>
+	<option>2</option>
+	<option>3</option>
+	<option>4</option>
+	<option>5</option>
+</select>
+<button onclick="agregarAlCarrito(8, 'cantidad8')">Agregar al carrito</button></td>
+
+</tbody></table> <td></td><br><br></br>
+
+<div id="carrito" style="background:#f0f0f0; padding:20px; margin:20px;">
+  <h2>🛒 Carrito de compras</h2>
+  <ul id="lista-carrito"></ul>
+  <strong id="total"></strong>
+</div>
+
+<script>
+
+  const productos = [
+    { nombre: "ESP32-DevKitC", precio: 150 },
+    { nombre: "ESP32-WROOM-32", precio: 250 },
+    { nombre: "ESP32-CAM", precio: 220 },
+    { nombre: "ESP32-S2 DevKitC", precio: 310 },
+    { nombre: "ESP32-S3", precio: 230 },
+    { nombre: "ESP32-C3", precio: 210 },
+    { nombre: "ESP32-C6", precio: 270 },
+    { nombre: "ESP8266", precio: 260 }
+  ];
+
+  let carrito = [];
+
+  function agregarAlCarrito(indice, selectId) {
+    const cantidad = parseInt(document.getElementById(selectId).value);
+    const producto = productos[indice];
+    carrito.push({ ...producto, cantidad });
+    mostrarCarrito();
+  }
+
+  function mostrarCarrito() {
+    const lista = document.getElementById('lista-carrito');
+    lista.innerHTML = '';
+    let total = 0;
+    carrito.forEach((item, index) => {
+      lista.innerHTML += `<li>
+        ${item.nombre} x${item.cantidad} - Q${item.precio * item.cantidad}
+        <button onclick="eliminarDelCarrito(${index})">Eliminar</button>
+      </li>`;
+      total += item.precio * item.cantidad;
+    });
+    document.getElementById('total').innerText = total > 0 ? `Total: Q${total}` : '';
+}
+
+function eliminarDelCarrito(indice) {
+    carrito.splice(indice, 1);
+    mostrarCarrito();
+}
+</script>
+
+
+
+</head><body><img src="Tiendafin.png" width="1520" height="300">
